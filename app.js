@@ -7,7 +7,7 @@ app.set("view engine", "pug");
 app.set("views", "views")
 app.use(express.urlencoded({extended: true}));
 mongoose.set('strictQuery', true);
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/visitantes', { useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/mongo-1', { useNewUrlParser: true});
 mongoose.connection.on("error",function(e){console.error(e);});
 
 
