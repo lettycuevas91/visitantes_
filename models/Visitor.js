@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
-  //date:Date,
+//  date:Date,
   name:String,
   count:Number
 });
